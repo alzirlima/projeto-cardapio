@@ -17,3 +17,16 @@ body {
 #login form {
     background-color: white
 }
+
+.logomarca img {
+    display: flex;
+    height: 100vh;
+    width:  100vh;
+}
+
+.logomarca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
