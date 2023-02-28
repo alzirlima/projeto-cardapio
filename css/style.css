@@ -4,24 +4,38 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #dedede;
+body{
+    background-image: linear-gradient(#000, #999);
+    background-repeat: no-repeat;
+    background-position: initial;
+    width: 100vw;
+    height: 100vh;
 }
 
+main{
+    display: flex;
+}
 
 #login {
     height: 100vh;
 }
 
-
 #login form {
-    background-color: white
+    width: 35vw;
+    margin-left: 100px;
 }
 
-.logomarca img {
-    display: flex;
-    height: 100vh;
-    width:  100vh;
+#login .row .col-4 form input{
+    border: 1px solid #2c2323; 
+    outline: none;
+}
+
+#login .row .col-4 form input:focus{
+    border-color: #198754;
+}
+
+ .logomarca img {
+   width:  100vh;
 }
 
 .logomarca {
@@ -30,3 +44,134 @@ body {
     align-items: center;
 }
 
+@media (min-width:249px) and (max-width:460px){
+    body{
+    background-image: linear-gradient(#000, #999);
+    background-repeat: no-repeat;
+    background-position: initial;
+    position: relative;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   main .logomarca{
+    width: 100vw;
+    height: 40vh;
+  }
+  
+  .logomarca img {
+    width:  80vw;
+    height: 60vh;
+    padding-right: 40px;
+    padding-left: 10px;   
+  }
+
+  main #login{
+    width: 50vw;
+    height: 10vh;
+  }
+
+  main #login .row .row .col-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   main #login .row .row .col-4 form{
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+    top: 163px;
+    left: 50px;
+    bottom: 10px;
+    margin: 0;
+    padding: 10px!important;
+   } 
+
+   main #login .row .row .col-4 form label{
+    margin: 2px 0 10px 0 !important;
+   }
+
+
+   main #login .row .row .col-4 form .btn{
+    margin-top: 8px!important;
+   } 
+
+}
+
+@media(min-width: 461px) and (max-width: 1023px) {
+      body{
+        background-image: linear-gradient(#000, #999);
+        background-repeat: no-repeat;
+        background-position: initial;
+        position: relative;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+      }
+
+      main .logomarca{
+        display: flex;
+        width: 100vw;
+        height: 30vh;
+        padding:0;
+      }
+
+      main .logomarca img{
+        width: 85vw;
+        height: 50vh;
+        padding: 15px 20px;
+      }
+
+      main #login{
+        display: flex;
+        width: 50vw;
+        height: 40vh;
+        justify-content: center;
+        align-self: center;
+      }
+
+      main #login .row .row{
+        display: flex;
+        align-items: center;
+        padding: 100px 60px;
+        height: 100vh;
+      }
+
+      main #login .row .row .col-4 .shadow{
+        width: 80vw;
+        height: 50vh;
+        margin: 0;
+      }
+
+}
+@media screen and (max-width:1024){
+    body{
+        background-image: linear-gradient(#000, #999);
+        background-repeat: no-repeat;
+        background-position: initial;
+    }
+    
+    main{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main .logomarca{
+        width: 50vw;
+    }
+
+    main #login{
+        width: 50vw;
+    }
+
+}
