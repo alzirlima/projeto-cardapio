@@ -10,20 +10,33 @@ body{
   background-position: initial;
 }
 
-.container .d-flex .logo img{
+.containerHeader{
+  background-color: rgb(47, 38, 38);
+  height: 300px;
+}
+
+.containerHeader .d-flex .logo img{
     width: 400px;
     height: 300px;
+    border: none;
 }
 
 .categorias .container .row{
   padding: 80px;
 }
 
-.categorias .container .row .col button,img{
+.categorias .container .row .col button{
+  background-color: transparent;
+  border-radius: 85px;
+  border: none;
+}
+
+.categorias .container .row .col img{
   width: 150px;
   height: 90px;
   background-color: transparent;
-  border: none;
+  border-radius: 85px;
+  border: 5px solid #554c4c;
 }
 
 .categorias .container .row .col{
@@ -33,6 +46,7 @@ body{
 .categorias .row .col-md-5 img{
   width: 300px;
   height: 200px;
+  border: 5px solid #5b4c4c;
 }
 
 footer{
@@ -40,11 +54,13 @@ footer{
   justify-content:center;
   align-items: center;
   padding: 0 50px;
+  background-color: rgb(47, 38, 38);
 }
 
 footer img{
   width: 400px;
   height: 250px;
+  background-color: rgb(47, 38, 38);
 }
 
 .bebidas{
